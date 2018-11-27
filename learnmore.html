@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+
+<style>
+* {
+    box-sizing: border-box;
+}
+/* Style the body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+/* Header/logo Title */
+.header {
+    padding: 80px;
+    text-align: center;
+    background: ;
+    color: white;
+}
+/* Increase the font size of the heading */
+.header h1 {
+    font-size: 40px;
+}
+/* Style the top navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+/* Style the navigation bar links */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+/* Right-aligned link */
+.navbar a.right {
+    float: right;
+}
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+/* Column container */
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+/* Main column */
+.main {
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+/* Fake image, just for this example */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>BlockChain Technology</h1>
+  <p>Beginner's guide to Blockchain Technology</p>
+</div>
+
+<div class="navbar">
+  <a href="#">Cryptocurrencies</a>
+  <a href="#">Government</a>
+  <a href="#">Education</a>
+</div>
+
+  <div class="main">
+
+  <h2>HOW DOES BLOCKCHAIN WORK?</h2>
+
+      <div class ="image" style="height:200px;"> <img src="https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2018/03/digital-sign-how-blockchain-works-edureka.png" alt="Digital sig" style="width:800px;height:150px;"></div>
+      <p> To understand how a simple transaction works over the blockchain network, we will explain it in detail in this example. When Kevin sends James 5 BTC, the transcation is broadcasted to a peer to peer network as a digital message. </p>
+      <p>The digital message has a unique signature. This is similar to your signature which provides the proof of ownership of the document, similarly, digital signature provides the proof that the transaction is genuine.
+
+ </p>
+<br>
+ <h2>INDEPENDENT VERIFICATION</h2>
+
+      <div class ="image" style="height:300px;"> <img src="https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2018/03/Independent-verification.png" alt="network" style="width:500px;height:250px;"></div>
+      <p> Before sending transactions to its neighbors, each bitcoin node that gets the transaction will indpendently verify the transaction. </p>
+      <p>This guarantees only valid transactions are propagated across the system while invalid transactions are disposed of at the first node which receives them. Every node confirms each transaction against a long agenda of criteria.
+
+ </p>
+<br>
+<h2>AGGREGATION OF VERIFIED TRANSACTION</h2>
+
+      <div class ="image" style="height:300px;"> <img src="https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2018/03/transaction-aggregation-how-blockchain-works-edureka.png" alt="network" style="width:350px;height:250px;"></div>
+      <p>   Independent aggregation of those transactions into new blocks by mining nodes combined with exhibited calculation through a proof-of-work algorithm. </p>
+      <p>By autonomously confirming every transaction as it is received and before propagating it, each node fabricates a pool of valid (however unconfirmed) transactions known as the transaction pool, memory pool or mempoo.
+Transaction reaches Mining nodes it collects, validates, and relays new transactions just like other nodes.
+Unlike other nodes, miner node will then aggregate these transactions into a candidate block.
+ </p>
+ <P> Candidate block will be constructed by the miner's node, and the miner will utilize their hardware mining rig to “mine” the block, to find a solution to the proof-of-work algorithm that makes the block valid.</P>
+<br>
+<h2>DATA MINING</h2>
+
+      <div class ="image" style="height:300px;"> <img src="https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2018/03/proof-of-work-how-blockchain-works-edureka.png" alt="network" style="width:500px;height:250px;"></div>
+      <p> The mining node running on the miner's desktop transmits the block header to their mining hardware, which starts testing trillions of nonces per second.
+Once one of the hardware mining machines finds a solution and sends it back to the mining node the mining node transmits the block to all its peers. </p>
+
+ <P>
+They receive, validate, and then propagate the new block. As the block ripples out across the network
+Now that that block is propagated in the network, each full nodes independently verifies the block.</P>
+<br>
+<h2>ASSEMBLING AND SELECTING CHAINS OF BLOCKS</h2>
+
+      <div class ="image" style="height:250px;"> <img src="https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2018/03/assembling-block-how-blockchain-works-edureka.png" alt="network" style="width:250px;height:200px;"></div>
+      <p> Once a node has validated a new block, it will then attempt to assemble a chain by connecting the block to the existing blockchain. </p>
+
+ <P>
+
+
+Once the block is verified by the network (illustrated in orange), it assembles the chain by connecting the block to the existing blockchain and becomes the part of the blockchain. And the miner is rewarded for successfully solving the block puzzle. </P>
+<br>
+
+
+      <h2>HISTORY OF BLOCKCHAIN</h2>
+
+      <p> Blockchain is a decentralized distributed database of immutable records, where transactions are protected by strong cryptographic algorithms and the network status is maintained by the Consensus algorithm. In simple words, Blockchain is a chain of blocks that contain information.</p>
+      <p>The technology was originally described in 1991 and was intended to timestamp digital documents to avoid backdate or tempering of any records.
+
+However great the technology was, its true potential was not realized until Satoshi Nakamoto used it to create a digital cryptocurrency “the Bitcoins“.</p>
+    <br>
+
+</div>
+
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #474e5d;
+    font-family: Helvetica, sans-serif;
+}
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+/* Container around content */
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+/* The circles on the timeline */
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+/* Place the container to the left */
+.left {
+    left: 0;
+}
+/* Place the container to the right */
+.right {
+    left: 50%;
+}
+/* Add arrows to the left container (pointing right) */
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+/* Add arrows to the right container (pointing left) */
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+/* Fix the circle for containers on the right side */
+.right::after {
+    left: -16px;
+}
+/* The actual content */
+.content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+  /* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="timeline">
+  <div class="container left">
+    <div class="content">
+      <h2>1990s</h2>
+      <p>The concept of distributed computing has been around since 1990s.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2009</h2>
+      <p>Satoshi Nakomoto created bitcoin and introduced the concept of blockchain to create a decentralized ledger maintained by anonymous consensus. </p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>2011-2012</h2>
+      <p>The deployment of cryptocurrency in application related to cash.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2012-2013</h2>
+      <p>Currecy transfer and digital payment systems. </p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>2013-2014</h2>
+      <p> Financial markets and applications using blockchain beyond cash transactions. </p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2014-2015</h2>
+      <p>Evolution of smart contracts.</p>
+    </div>
+  </div>
+    <div class="container left">
+    <div class="content">
+      <h2>2015-2016</h2>
+      <p> Permissioned blockchain network solutions. </p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2016-2017</h2>
+      <p>Market evolution, sub-development and exploration across industries. </p>
+    </div>
+  </div>
+</div>
+
+
+</body>
+
+</html>
