@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Popup container */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 800px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -400px;
+}
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+/* show popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+/* fade */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+</style>
+</head>
+<body style="text-align:center">
+
+<h2>Government</h2>
+
+<div class="popup" onclick="myFunction()">Why do government use blockchain technology! *Click on me*
+  <span class="popuptext" id="myPopup">Transfer encrypted public data securely. Build and regulate infrastructure. Promote fair place for traders to transact.</span>
+</div>
+
+<script>
+// When the user clicks on div, open the popup
+function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
+</script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+.active, .collapsible:hover {
+    background-color: #555;
+}
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+
+
+<p>Leading Governments:</p>
+<button class="collapsible">Australian Government</button>
+<div class="content">
+  <p> The Australian Government has implemented blockchain technology in digital marketplace, so small Australian firms can secure government as their first customer. The Australian Government is looking for methods to build on blockchain's infrastructure and allow a fair place for transactions to occur. They have made several organizations such as Standards Australia (A committee that governs blockchain standards and its uses, rules and other relevant information)
+  </p>
+</div>
+<button class="collapsible">Hong Kong Government</button>
+<div class="content">
+  <p> In a recent RISE conference, Consensyn Mesh initiated a discussion on individual's opinion on the future of blockchain and its effect with the Hong Kong Government. In the discussion, it is suggested that the Hong Kong Government are looking into methods to implement blockchain to regulate the tremendous number of assets within Hong Kong, which will reduce the error and delayed information from a paper-based system. Another factor that was taken into consideration is tax collection. Smart contracts allows firms and individuals to pay tax without any cost from any organization. OpenLaw has made a proposal on how firms can utilize smart contracts to pay for tax.
+  </p>
+</div>
+<button class="collapsible">US Government</button>
+<div class="content">
+  <p>As of November 2018, Homeland Security has accepted proposals that cost up to $800,000 government funding in technology of Blockchain to improve and secure information in regards to issued certificates, attestations and licenses. It also aims to target and solve issues regarding to issuance and vertification, government credentials and storage and management. The DHS believes that blockchain can lead to higher efficiency for government processes and bring positive impacts to U.S. Citizens lives.</p>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
+
+<style>
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+</style>
+
+<div class="footer">
+  <p>Government and Blockchain Uses</p>
+</div>
